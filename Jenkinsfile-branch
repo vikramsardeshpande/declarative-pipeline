@@ -16,7 +16,7 @@ pipeline {
                 branch 'devops'
             }
             steps {
-                echo 'Deployment showing to Jitendra'
+                echo 'Deployment showing added trigger'
                 sh 'cat README.md'
             }
         }
