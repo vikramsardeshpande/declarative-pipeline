@@ -8,7 +8,9 @@ pipeline {
         }
         stage('Example Deploy') {
             when {
-                branch 'devops'
+              anyOf {
+                branch 'devops';branch 'master' 
+                }
             }
             steps {
                 echo 'Deploying'
