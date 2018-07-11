@@ -1,6 +1,11 @@
 pipeline {
     agent any
-    stages {
+    triggers {
+ //Execute weekdays every four hours starting at minute 0  
+     // cron('0 */4 * * 1-5’)
+   pollSCM('* * * * * ’) 
+    }
+        stages {
         stage('Example Build') {
             steps {
                 echo 'Hello World'
