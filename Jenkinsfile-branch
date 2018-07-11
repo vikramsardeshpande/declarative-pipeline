@@ -3,7 +3,7 @@ pipeline {
                 stages {
                     stage ('Deploy') {
                      when {
-                       branch 'devops'
+                       branch 'master'
                            }
                         steps {
                             echo 'Placeholder for deploy steps.'
