@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Example Deploy') {
             when {
-                branch 'master'
+                branch 'devops'
             }
             steps {
                 echo 'Deploying'
